@@ -1,0 +1,48 @@
+
+header {
+    width: 100%;
+    background-color: #ffab3f;
+}
+
+nav, .main {
+
+    justify-content: space-between;
+    margin: 0 auto;
+}
+.wrapper {
+    width: 80%;
+}
+.main-nav, .main, nav {
+
+    display: flex;
+}
+
+.main-nav li{
+    display: inline;
+    padding: 0 30px 0;
+    color: white;
+    font-size: 1.2em;
+    font-weight: bold;
+    margin-top: 10px;
+    
+    
+}
+a {
+    color: white;
+    text-decoration: none;
+}
+a: link {
+    color: white;
+}
+.pay, .bills, .logo {
+    display: block;
+}
+input, select{
+    border-radius: 5px;
+/*    padding: 5px;*/
+    margin: 5px;
+}
+h2 {
+    text-align: center;
+    margin-bottom: 5px;
+}
