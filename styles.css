@@ -12,7 +12,7 @@ nav, .main {
 .wrapper {
     width: 80%;
 }
-.main-nav, .main, nav {
+.main-nav, nav {
 
     display: flex;
 }
@@ -27,6 +27,13 @@ nav, .main {
     
     
 }
+.pay, .bills {
+    
+    width: 80%;
+}
+table, .pay, .bills {
+    margin: 0 auto;
+}
 a {
     color: white;
     text-decoration: none;
@@ -34,15 +41,19 @@ a {
 a: link {
     color: white;
 }
-.pay, .bills, .logo {
+.logo {
     display: block;
 }
 input, select{
     border-radius: 5px;
 /*    padding: 5px;*/
     margin: 5px;
+    width: 100%;
 }
 h2 {
     text-align: center;
     margin-bottom: 5px;
+}
+.input[date], select {
+    width: 45%;
 }
