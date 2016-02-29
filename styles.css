@@ -1,5 +1,5 @@
 
-header {
+header, footer {
     width: 100%;
     background-color: #ffab3f;
 }
@@ -46,14 +46,54 @@ a: link {
 }
 input, select{
     border-radius: 5px;
-/*    padding: 5px;*/
-    margin: 5px;
-    width: 100%;
+    margin: 0 7.5px 15px 7.5px;
+    
+    height: 30px;
+    
+}
+td {
+     padding-top: 10px;
+}
+
+input {
+    width: 95%;
+}
+select, input[type=date] {
+    width: 90%;
+}
+.pay select {
+    width: 170px;
+}
+label {
+    margin-left: 15px;
+    padding-top: 15px;
 }
 h2 {
     text-align: center;
     margin-bottom: 5px;
 }
-.input[date], select {
-    width: 45%;
+
+table {
+    width: 380px;
+    background-color: beige;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+tr:nth-child(2n+2) {
+    border-bottom: 1px solid gray; 
+}
+tr:last-child {
+    border: none;
+}
+footer {
+    display: flex;
+    margin-top: auto;
+    height: 35px;
+    
+}
+footer p {
+    text-align: center;
+    font-size: .75em;
+    color: white;
+    margin: auto;
 }

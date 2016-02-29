@@ -22,23 +22,25 @@
             
             <div class="pay">
                 <h2>Income</h2>
-                <form action="">
-                    <table width="550px">
+                <form>
+                    <table>
                         <tr>
                             <td colspan="2"><label for="income1">Income 1: </label><br />
                                 <input type="text" name="income1" width="20" />
                             </td>
                         </tr>
                         <tr>
-                            <td colspan="1"><label for="frequency1">Frequency: </label><br />
-                                <select>
+                            <td>
+                                <label for="frequency1">Frequency: </label><br />
+                                <select name="frequency1">
                                     <option name="weekly">Weekly</option>
                                     <option name="biweekly">Bi-Weekly</option>
                                     <option name="1stand15th">1st and 15th</option>
                                     <option name="monthly">Monthly</option>
+<!--                                    <option name="everyothermonth1">Every other month</option>-->
                                 </select>
                             </td>
-                            <td colspan="1"><label for="nextpay1">Next Pay Date</label><br />
+                            <td><label for="nextpay1">Next Pay Date</label><br />
                                 <input type="date" name="nextpay1" size="15px" />
                             </td>
                         </tr>
@@ -48,8 +50,9 @@
                             </td>
                         </tr>
                         <tr>
-                             <td><label for="frequency2">Frequency: </label><br />
-                                <select>
+                             <td>
+                                <label for="frequency2">Frequency: </label><br />
+                                <select name="frequency2">
                                     <option name="weekly2">Weekly</option>
                                     <option name="biweekly2">Bi-Weekly</option>
                                     <option name="1stand15th2">1st and 15th</option>
@@ -66,8 +69,9 @@
                             </td>
                         </tr>
                         <tr>
-                             <td><label for="frequency3">Frequency: </label><br />
-                                <select for="frequency3">
+                             <td>
+                                <label for="frequency3">Frequency: </label><br />
+                                <select name="frequency3">
                                     <option name="weekly3">Weekly</option>
                                     <option name="biweekly3">Bi-Weekly</option>
                                     <option name="1stand15th3">1st and 15th</option>
@@ -88,13 +92,15 @@
                 <form>
                     <table>
                         <tr>
-                            <td>
+                            <td colspan="2">
                                 <label for="bill1">Bill 1: </label><br />
                                 <input type="text" name="bill1" size="15px" />
                             </td>
+                        </tr>
+                        <tr>
                              <td>
                                 <label for="billfrequency1">Bill Frequency: </label><br />
-                                <select name-"billfrequency1">
+                                <select name="billfrequency1">
                                     <option name="every30days1">Every 30 days</option>
                                     <option name="samedate1">Same date each month</option>
                                     <option name="everyothermonth1">Every other month</option>
@@ -108,13 +114,15 @@
                             
                         </tr>
                          <tr>
-                            <td>
+                            <td colspan="2">
                                 <label for="bill2">Bill 2: </label><br />
                                 <input type="text" name="bill2" size="15px" />
                             </td>
+                        </tr>
+                        <tr>
                             <td>
                                 <label for="billfrequency2">Bill Frequency: </label><br />
-                                <select name-"billfrequency2">
+                                <select name="billfrequency2">
                                     <option name="every30days2">Every 30 days</option>
                                     <option name="samedate2">Same date each month</option>
                                     <option name="everyothermonth2">Every other month</option>
@@ -128,13 +136,15 @@
                             
                         </tr>
                          <tr>
-                            <td>
+                            <td colspan="2">
                                 <label for="bill2">Bill 3: </label><br />
                                 <input type="text" name="bill3" size="15px" />
                             </td>
+                        </tr>
+                        <tr>
                             <td>
                                 <label for="billfrequency3">Bill Frequency: </label><br />
-                                <select name-"billfrequency3">
+                                <select name="billfrequency3">
                                     <option name="every30days3">Every 30 days</option>
                                     <option name="samedate3">Same date each month</option>
                                     <option name="everyothermonth3">Every other month</option>
@@ -148,13 +158,15 @@
                             
                         </tr>
                                  <tr>
-                            <td>
+                            <td colspan="2">
                                 <label for="bill2">Bill 4: </label><br />
                                 <input type="text" name="bill4" size="15px" />
                             </td>
+                        </tr>
+                        <tr>
                             <td>
                                 <label for="billfrequency4">Bill Frequency: </label><br />
-                                <select name-"billfrequency4">
+                                <select name="billfrequency4">
                                     <option name="every30days4">Every 30 days</option>
                                     <option name="samedate4">Same date each month</option>
                                     <option name="everyothermonth4">Every other month</option>
@@ -165,16 +177,17 @@
                                 <label for="duedate1">Due Date 4: </label><br />
                                 <input type="date" name="duedate4" size="15px" />
                             </td>
-                            
                         </tr>
-                                 <tr>
-                            <td>
+                         <tr>
+                            <td colspan="2">
                                 <label for="bill2">Bill 5: </label><br />
                                 <input type="text" name="bill5" size="15px" />
                             </td>
+                        </tr>
+                        <tr>
                             <td>
                                 <label for="billfrequency5">Bill Frequency: </label><br />
-                                <select name-"billfrequency5">
+                                <select name="billfrequency5">
                                     <option name="every30days5">Every 30 days</option>
                                     <option name="samedate5">Same date each month</option>
                                     <option name="everyothermonth5">Every other month</option>
@@ -188,13 +201,15 @@
                             
                         </tr>
                                  <tr>
-                            <td>
+                            <td colspan="2">
                                 <label for="bill2">Bill 6: </label><br />
                                 <input type="text" name="bill4" size="15px" />
                             </td>
+                        </tr>
+                        <tr>
                             <td>
                                 <label for="billfrequency4">Bill Frequency: </label><br />
-                                <select name-"billfrequency6">
+                                <select name="billfrequency6">
                                     <option name="every30days6">Every 30 days</option>
                                     <option name="samedate6">Same date each month</option>
                                     <option name="everyothermonth6">Every other month</option>
@@ -208,13 +223,15 @@
                             
                         </tr>
                                  <tr>
-                            <td>
+                            <td colspan="2">
                                 <label for="bill2">Bill 7: </label><br />
                                 <input type="text" name="bill7" size="15px" />
                             </td>
+                        </tr>
+                        <tr>
                             <td>
                                 <label for="billfrequency7">Bill Frequency: </label><br />
-                                <select name-"billfrequency7">
+                                <select name="billfrequency7">
                                     <option name="every30days7">Every 30 days</option>
                                     <option name="samedate7">Same date each month</option>
                                     <option name="everyothermonth7">Every other month</option>
@@ -228,13 +245,15 @@
                             
                         </tr>
                                  <tr>
-                            <td>
+                            <td colspan="2">
                                 <label for="bill2">Bill 8: </label><br />
                                 <input type="text" name="bill4" size="15px" />
                             </td>
+                        </tr>
+                        <tr>
                             <td>
                                 <label for="billfrequency8">Bill Frequency: </label><br />
-                                <select name-"billfrequency8">
+                                <select name="billfrequency8">
                                     <option name="every30days8">Every 30 days</option>
                                     <option name="samedate8">Same date each month</option>
                                     <option name="everyothermonth8">Every other month</option>
@@ -256,7 +275,9 @@
                 
             </div>
         </div>
-
+        <footer>
+        <p>2016 &copy; When2Pay</p>
+        </footer>
 
 
     </body>
