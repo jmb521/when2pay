@@ -4,7 +4,9 @@
         <title>When2Pay</title>
         <link rel="stylesheet" type="text/css" href="normalize.css" />
         <link rel="stylesheet" type="text/css" href="styles.css" />
-
+        <script src = "http://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+        <script src = "http://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.11.2/jquery-ui.min.js"></script>
+        <script src="main.js"></script>
 
     </head>
     <body>
@@ -26,63 +28,30 @@
                     <table>
                         <tr>
                             <td colspan="2"><label for="income1">Income 1: </label><br />
-                                <input type="text" name="income1" width="20" />
+                                <input type="text" id=income class="income1" />
                             </td>
                         </tr>
                         <tr>
                             <td>
-                                <label for="frequency1">Frequency: </label><br />
-                                <select name="frequency1">
+                                <label for="frequency">Frequency: </label><br />
+                                <select name="frequency">
                                     <option name="weekly">Weekly</option>
                                     <option name="biweekly">Bi-Weekly</option>
                                     <option name="1stand15th">1st and 15th</option>
                                     <option name="monthly">Monthly</option>
-<!--                                    <option name="everyothermonth1">Every other month</option>-->
+
                                 </select>
                             </td>
                             <td><label for="nextpay1">Next Pay Date</label><br />
-                                <input type="date" name="nextpay1" size="15px" />
+                                <input type="date" id="nextpay" size="15px" />
                             </td>
                         </tr>
                         <tr>
-                            <td colspan="2"> <label for="income2">Income 2: </label><br />
-                                <input type="text" name="income2" size="15px" />
+                        <td colspan="2">
+                            <button id="incomebutton" role="button">Update Income</button>
                             </td>
                         </tr>
-                        <tr>
-                             <td>
-                                <label for="frequency2">Frequency: </label><br />
-                                <select name="frequency2">
-                                    <option name="weekly2">Weekly</option>
-                                    <option name="biweekly2">Bi-Weekly</option>
-                                    <option name="1stand15th2">1st and 15th</option>
-                                    <option name="monthly2">Monthly</option>
-                                </select>
-                            </td>
-                            <td><label for="nextpay2">Next Pay Date</label><br />
-                                <input type="date" name="nextpay2" size="15px" />
-                            </td>
-                        </tr>
-                         <tr>
-                            <td colspan="2"><label for="income3">Income 3: </label><br />
-                                <input type="text" name="income3" size="15px" />
-                            </td>
-                        </tr>
-                        <tr>
-                             <td>
-                                <label for="frequency3">Frequency: </label><br />
-                                <select name="frequency3">
-                                    <option name="weekly3">Weekly</option>
-                                    <option name="biweekly3">Bi-Weekly</option>
-                                    <option name="1stand15th3">1st and 15th</option>
-                                    <option name="monthly3">Monthly</option>
-                                </select>
-                            </td>
-                            <td><label for="nextpay3">Next Pay Date</label><br />
-                                <input type="date" name="nextpay3" size="15px" />
-                            </td>
-                        </tr>
-               
+                        
                 </table>
                 
                 </form>
@@ -93,186 +62,45 @@
                     <table>
                         <tr>
                             <td colspan="2">
-                                <label for="bill1">Bill 1: </label><br />
-                                <input type="text" name="bill1" size="15px" />
+                                <label for="bill">Bill: </label><br />
+                                <input type="text" name="bill" size="15px" />
                             </td>
                         </tr>
                         <tr>
                              <td>
-                                <label for="billfrequency1">Bill Frequency: </label><br />
-                                <select name="billfrequency1">
-                                    <option name="every30days1">Every 30 days</option>
-                                    <option name="samedate1">Same date each month</option>
-                                    <option name="everyothermonth1">Every other month</option>
-                                    <option name="every6months1">Every 6 months</option>
+                                <label for="billfrequency">Bill Frequency: </label><br />
+                                <select name="billfrequency">
+                                    <option name="every30days">Every 30 days</option>
+                                    <option name="samedate">Same date each month</option>
+                                    <option name="everyothermonth">Every other month</option>
+                                    <option name="every6months">Every 6 months</option>
                                 </select>                                
                             </td>
                             <td>
-                                <label for="duedate1">Due Date 1: </label><br />
-                                <input type="date" name="duedate1" size="15px" />
+                                <label for="duedate">Due Date: </label><br />
+                                <input type="date" name="duedate" size="15px" />
                             </td>
                             
                         </tr>
-                         <tr>
-                            <td colspan="2">
-                                <label for="bill2">Bill 2: </label><br />
-                                <input type="text" name="bill2" size="15px" />
-                            </td>
-                        </tr>
                         <tr>
-                            <td>
-                                <label for="billfrequency2">Bill Frequency: </label><br />
-                                <select name="billfrequency2">
-                                    <option name="every30days2">Every 30 days</option>
-                                    <option name="samedate2">Same date each month</option>
-                                    <option name="everyothermonth2">Every other month</option>
-                                    <option name="every6months2">Every 6 months</option>
-                                </select>                                
-                            </td>
-                            <td>
-                                <label for="duedate1">Due Date 2: </label><br />
-                                <input type="date" name="duedate1" size="15px" />
-                            </td>
-                            
-                        </tr>
-                         <tr>
-                            <td colspan="2">
-                                <label for="bill2">Bill 3: </label><br />
-                                <input type="text" name="bill3" size="15px" />
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>
-                                <label for="billfrequency3">Bill Frequency: </label><br />
-                                <select name="billfrequency3">
-                                    <option name="every30days3">Every 30 days</option>
-                                    <option name="samedate3">Same date each month</option>
-                                    <option name="everyothermonth3">Every other month</option>
-                                    <option name="every6months3">Every 6 months</option>
-                                </select>                                
-                            </td>
-                            <td>
-                                <label for="duedate1">Due Date 3: </label><br />
-                                <input type="date" name="duedate3" size="15px" />
-                            </td>
-                            
-                        </tr>
-                                 <tr>
-                            <td colspan="2">
-                                <label for="bill2">Bill 4: </label><br />
-                                <input type="text" name="bill4" size="15px" />
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>
-                                <label for="billfrequency4">Bill Frequency: </label><br />
-                                <select name="billfrequency4">
-                                    <option name="every30days4">Every 30 days</option>
-                                    <option name="samedate4">Same date each month</option>
-                                    <option name="everyothermonth4">Every other month</option>
-                                    <option name="every6months4">Every 6 months</option>
-                                </select>                                
-                            </td>
-                            <td>
-                                <label for="duedate1">Due Date 4: </label><br />
-                                <input type="date" name="duedate4" size="15px" />
-                            </td>
-                        </tr>
-                         <tr>
-                            <td colspan="2">
-                                <label for="bill2">Bill 5: </label><br />
-                                <input type="text" name="bill5" size="15px" />
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>
-                                <label for="billfrequency5">Bill Frequency: </label><br />
-                                <select name="billfrequency5">
-                                    <option name="every30days5">Every 30 days</option>
-                                    <option name="samedate5">Same date each month</option>
-                                    <option name="everyothermonth5">Every other month</option>
-                                    <option name="every6months5">Every 6 months</option>
-                                </select>                                
-                            </td>
-                            <td>
-                                <label for="duedate1">Due Date 5: </label><br />
-                                <input type="date" name="duedate5" size="15px" />
-                            </td>
-                            
-                        </tr>
-                                 <tr>
-                            <td colspan="2">
-                                <label for="bill2">Bill 6: </label><br />
-                                <input type="text" name="bill4" size="15px" />
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>
-                                <label for="billfrequency4">Bill Frequency: </label><br />
-                                <select name="billfrequency6">
-                                    <option name="every30days6">Every 30 days</option>
-                                    <option name="samedate6">Same date each month</option>
-                                    <option name="everyothermonth6">Every other month</option>
-                                    <option name="every6months6">Every 6 months</option>
-                                </select>                                
-                            </td>
-                            <td>
-                                <label for="duedate1">Due Date 4: </label><br />
-                                <input type="date" name="duedate4" size="15px" />
-                            </td>
-                            
-                        </tr>
-                                 <tr>
-                            <td colspan="2">
-                                <label for="bill2">Bill 7: </label><br />
-                                <input type="text" name="bill7" size="15px" />
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>
-                                <label for="billfrequency7">Bill Frequency: </label><br />
-                                <select name="billfrequency7">
-                                    <option name="every30days7">Every 30 days</option>
-                                    <option name="samedate7">Same date each month</option>
-                                    <option name="everyothermonth7">Every other month</option>
-                                    <option name="every6months7">Every 6 months</option>
-                                </select>                                
-                            </td>
-                            <td>
-                                <label for="duedate1">Due Date 7: </label><br />
-                                <input type="date" name="duedate7" size="15px" />
-                            </td>
-                            
-                        </tr>
-                                 <tr>
-                            <td colspan="2">
-                                <label for="bill2">Bill 8: </label><br />
-                                <input type="text" name="bill4" size="15px" />
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>
-                                <label for="billfrequency8">Bill Frequency: </label><br />
-                                <select name="billfrequency8">
-                                    <option name="every30days8">Every 30 days</option>
-                                    <option name="samedate8">Same date each month</option>
-                                    <option name="everyothermonth8">Every other month</option>
-                                    <option name="every6months8">Every 6 months</option>
-                                </select>                                
-                            </td>
-                            <td>
-                                <label for="duedate1">Due Date 8: </label><br />
-                                <input type="date" name="duedate8" size="15px" />
-                            </td>
-                            
-                        </tr>
-                        
-                        
-                        
+                        <td colspan="2">
+                            <button id="billbutton" role="button">Update Bill</button>
+                            </td></tr>
+                         
                 </table>
                 
                 </form>
                 
+            </div>
+            <div class="incometable">
+            <table>
+                <tr>
+                    <td>Income Name</td>
+                    <td>Frequency</td>
+                    <td>Next Pay Date</td>
+                </tr>
+                
+                </table>
             </div>
         </div>
         <footer>
