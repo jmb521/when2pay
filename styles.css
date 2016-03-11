@@ -4,15 +4,20 @@ header, footer {
     background-color: #ffab3f;
 }
 
-nav, .main {
+nav{
 
     justify-content: space-between;
     margin: 0 auto;
 }
+.main {
+    
+    
+    flex-direction: row;
+}
 .wrapper {
     width: 80%;
 }
-.main-nav, nav {
+.main-nav, nav, .main {
 
     display: flex;
 }
@@ -27,11 +32,15 @@ nav, .main {
     
     
 }
-.pay, .bills {
+.main {
     
-    width: 80%;
+    margin: 0 auto;
+    align-content: space-around;
+    flex-wrap: wrap;
 }
-table, .pay, .bills {
+
+
+table {
     margin: 0 auto;
 }
 a {
@@ -51,10 +60,15 @@ input, select{
     height: 30px;
     
 }
+.pay, .bills, .incometable {
+    width: 50%;
+}
 td {
      padding-top: 10px;
 }
-
+.incometable {
+    display: flex;
+}
 input {
     width: 95%;
 }
@@ -79,15 +93,15 @@ table {
     border-radius: 10px;
     margin-bottom: 10px;
 }
-tr:nth-child(2n+2) {
-    border-bottom: 1px solid gray; 
+button {
+    
+    align-self: center;
 }
-tr:last-child {
-    border: none;
-}
+
+
 footer {
     display: flex;
-    margin-top: auto;
+    align-self: baseline;
     height: 35px;
     
 }
@@ -96,4 +110,7 @@ footer p {
     font-size: .75em;
     color: white;
     margin: auto;
+}
+.incometable tr: nth-child(even) {
+    background-color: gray;
 }
