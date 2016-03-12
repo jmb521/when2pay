@@ -3,7 +3,7 @@
 var incomearr = [];
 var incomerows;
 var incomename = document.getElementById("income").value; 
-var frequencydate = document.getElementById("frequency").value;
+var frequencydate = document.getSelection("frequency").value;
 var nextpaydate = document.getElementById("nextpay").value;
 
 var addIncome = function () {
@@ -12,8 +12,12 @@ var addIncome = function () {
     incomearr.push({income1: incomename, 
                 frequency: frequencydate, 
                 nextPay: nextpaydate});
-   incomerows += "<tr><td>" + incomearr[0].income1 + "</td><td>" + "<td>" + incomearr[0].frequency + "</td><td>" + incomearr[0].nextPay + "</td></tr>";
-    $(".incometable").append(incomerows);
+    for(var i=0; i<incomearr.length; i++) {
+   incomerows += "<tr><td>" + incomearr[i].income1 + "</td><td>" + "<td>" + incomearr[i].frequency + "</td><td>" + incomearr[i].nextPay + "</td></tr>";
+    }
+   
+    $("#incometr").append(incomerows);
+    
 };
 
 addIncomeBtn = document.getElementById("incomebutton");

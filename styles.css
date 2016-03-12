@@ -1,4 +1,3 @@
-
 header, footer {
     width: 100%;
     background-color: #ffab3f;
@@ -37,6 +36,7 @@ nav{
     margin: 0 auto;
     align-content: space-around;
     flex-wrap: wrap;
+    height: 100%;
 }
 
 
@@ -97,15 +97,19 @@ button {
     
     align-self: center;
 }
+.incometable {
+    height: 300px;
+}
 
+.main-footer {
 
-footer {
-    display: flex;
-    align-self: baseline;
-    height: 35px;
+    height: 50px;
+    align-self: flex-end;
+    
+    
     
 }
-footer p {
+.main-footer p {
     text-align: center;
     font-size: .75em;
     color: white;
