@@ -4,10 +4,9 @@
         <title>When2Pay</title>
         <link rel="stylesheet" type="text/css" href="normalize.css" />
         <link rel="stylesheet" type="text/css" href="styles.css" />
-        <script src = "http://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+        
+ <script src = "http://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
         <script src = "http://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.11.2/jquery-ui.min.js"></script>
-        <script src="main.js"></script>
-
     </head>
     <body>
         <header>
@@ -34,11 +33,11 @@
                         <tr>
                             <td>
                                 <label for="frequency">Frequency: </label><br />
-                                <select name="frequency">
-                                    <option name="weekly">Weekly</option>
-                                    <option name="biweekly">Bi-Weekly</option>
-                                    <option name="1stand15th">1st and 15th</option>
-                                    <option name="monthly">Monthly</option>
+                                <select name="frequency" id="frequency">
+                                    <option value="weekly">Weekly</option>
+                                    <option value="biweekly">Bi-Weekly</option>
+                                    <option value="1stand15th">1st and 15th</option>
+                                    <option value="monthly">Monthly</option>
 
                                 </select>
                             </td>
@@ -93,7 +92,7 @@
                 
             </div>
             <div class="incometable">
-            <table>
+            <table id="incometr">
                 <tr>
                     <td>Income Name</td>
                     <td>Frequency</td>
@@ -102,12 +101,16 @@
                 
                 </table>
             </div>
+            
         </div>
-        <footer>
+         <footer class="main-footer">
         <p>2016 &copy; When2Pay</p>
         </footer>
+              
+        
+       
 
-
+<script src="main.js"></script>
     </body>
 
 </html>
