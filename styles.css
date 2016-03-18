@@ -2,6 +2,10 @@ header, footer {
     width: 100%;
     background-color: #ffab3f;
 }
+body {
+    display: flex;
+    flex-direction: column;
+}
 
 nav{
 
@@ -9,11 +13,7 @@ nav{
     margin: 0 auto;
     
 }
-.main {
-    display: flex;
-    
-    flex-direction: row;
-}
+
 .wrapper {
     width: 80%;
 }
@@ -34,11 +34,11 @@ nav{
     
 }
 .main {
-    
     margin: 0 auto;
     align-content: space-around;
     flex-wrap: wrap;
-    min-height: 100vh;
+    flex: 1;
+    min-height: calc(100vh - 140px);
 }
 
 
@@ -62,15 +62,13 @@ input, select{
     height: 30px;
     
 }
-.pay, .bills, .incometable {
+.pay, .bills, .incometable, .billtable {
     width: 50%;
 }
 td {
      padding-top: 10px;
 }
-.incometable {
-    display: flex;
-}
+
 input {
     width: 95%;
 }
@@ -99,8 +97,10 @@ button {
     
     align-self: center;
 }
-.incometable {
+.incometable, .billtable {
 /*    height: 200px;*/
+    margin-top: -200px;
+    
 }
 
 .main-footer {
@@ -114,7 +114,8 @@ button {
     font-size: .75em;
     color: white;
     margin: auto;
+    
 }
-.incometable tr: nth-child(even) {
+.incometable tr: nth-child(even), .billtable tr: nth-child(even) {
     background-color: gray;
 }

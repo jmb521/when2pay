@@ -19,6 +19,7 @@
                 </ul>
             </nav>
         </header>
+        
         <div class="main wrapper">
             
             <div class="pay">
@@ -47,7 +48,7 @@
                         </tr>
                         <tr>
                         <td colspan="2">
-                            <button id="incomebutton" role="button">Update Income</button>
+                            <button id="incomebutton" type="button" role="button">Update Income</button>
                             </td>
                         </tr>
                         
@@ -62,13 +63,13 @@
                         <tr>
                             <td colspan="2">
                                 <label for="bill">Bill: </label><br />
-                                <input type="text" name="bill" size="15px" />
+                                <input type="text" name="bill" id="bill" size="15px" />
                             </td>
                         </tr>
                         <tr>
                              <td>
                                 <label for="billfrequency">Bill Frequency: </label><br />
-                                <select name="billfrequency">
+                                <select name="billfrequency" id="billfrequency">
                                     <option name="every30days">Every 30 days</option>
                                     <option name="samedate">Same date each month</option>
                                     <option name="everyothermonth">Every other month</option>
@@ -77,20 +78,21 @@
                             </td>
                             <td>
                                 <label for="duedate">Due Date: </label><br />
-                                <input type="date" name="duedate" size="15px" />
+                                <input type="date" name="duedate" id="duedate" size="15px" />
                             </td>
                             
                         </tr>
                         <tr>
                         <td colspan="2">
-                            <button id="billbutton" role="button">Update Bill</button>
+                            <button id="billbutton" type="button" role="button">Update Bill</button>
                             </td></tr>
                          
                 </table>
                 
                 </form>
+                </div>
                 
-            </div>
+            
             <div class="incometable">
             <table id="incometr">
                 <tr>
@@ -102,6 +104,16 @@
                 </table>
             </div>
             
+        
+            <div class="billtable">
+        <table id="billtr">
+                <tr>
+            <td>Bill Name</td>
+            <td>Bill Frequency</td>
+            <td>Due Date</td>
+        </tr>
+                
+                </table></div>
         </div>
          <footer class="main-footer">
         <p>2016 &copy; When2Pay</p>
