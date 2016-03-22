@@ -14,18 +14,26 @@ var duedate = document.getElementById("duedate");
 
 
 var addIncome = function () {
-
-  
+    
+    $(".incometablerow").empty();    
+    
+    
     incomearr.push({income1: incomename.value, 
-                frequency: frequencydate.value, 
+                frequency: frequencydate.options[frequencydate.selectedIndex].text,
                 nextPay: nextpaydate.value});
     for (var i=0; i<incomearr.length; i++) {
-   incomerows += "<tr><td>" + incomearr[i].income1 + "</td><td>" + incomearr[i].frequency + "</td><td>" + incomearr[i].nextPay + "</td></tr>";
+      if(incomearr.length >1){
+          
+          i=incomearr.length-1;
+      } 
+     incomerows += "<tr class='incometablerow'><td>" + incomearr[i].income1 + "</td><td>" + incomearr[i].frequency + "</td><td>" + incomearr[i].nextPay + "</td><td><input type='radio' name'input' /></tr>";
     }
    
     $("#incometr").append(incomerows);
     
+    
 };
+
 
 addIncomeBtn = document.getElementById("incomebutton");
 addIncomeBtn.onclick = addIncome;
@@ -34,7 +42,7 @@ addIncomeBtn.onclick = addIncome;
 
 
 var addBills = function () {
-    
+//    $("#billtr").empty();
     billarr.push({
         bill1: bill.value, 
         billfrequency: billfrequency.value, 
