@@ -46,6 +46,7 @@ nav{
 
 table {
     margin: 0 auto;
+
 }
 a {
     color: white;
@@ -71,6 +72,14 @@ input, select{
     height: 300px;
     height: 300px;
 }
+#incometr {
+    width: 75%;
+}
+#incometr tr, #billtr tr {
+    
+    text-align: center;
+}
+
 td {
      padding-top: 10px;
 }

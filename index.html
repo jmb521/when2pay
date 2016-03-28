@@ -34,7 +34,7 @@
                         <tr>
                             <td>
                                 <label for="frequency">Frequency: </label><br />
-                                <select name="frequency" id="frequency">
+                                <select id="frequency" name="select">
                                     <option value="weekly">Weekly</option>
                                     <option value="biweekly">Bi-Weekly</option>
                                     <option value="1stand15th">1st and 15th</option>
@@ -70,10 +70,10 @@
                              <td>
                                 <label for="billfrequency">Bill Frequency: </label><br />
                                 <select name="billfrequency" id="billfrequency">
-                                    <option name="every30days">Every 30 days</option>
-                                    <option name="samedate">Same date each month</option>
-                                    <option name="everyothermonth">Every other month</option>
-                                    <option name="every6months">Every 6 months</option>
+                                    <option value="every30days">Every 30 days</option>
+                                    <option value="samedate">Same date each month</option>
+                                    <option value="everyothermonth">Every other month</option>
+                                    <option value="every6months">Every 6 months</option>
                                 </select>                                
                             </td>
                             <td>
@@ -101,6 +101,7 @@
                     <td>Income Name</td>
                     <td>Frequency</td>
                     <td>Next Pay Date</td>
+                    <td></td>
                 </tr>
                 
                 </table>
